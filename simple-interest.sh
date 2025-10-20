@@ -13,4 +13,11 @@ r=$3
 
 # Calculate simple interest with bc for decimals
 si=$(echo "scale=2; $p * $t * $r / 100" | bc)
-echo "The simple interest is: $si"
+echo "The simple interest is: $si"   
+
+Make executable and commit locally:
+chmod +x simple-interest.sh
+git add simple-interest.sh LICENSE README.md CODE_OF_CONDUCT.md CONTRIBUTING.md
+git commit -m "Add project files and simple-interest script"
+git push origin main
+
